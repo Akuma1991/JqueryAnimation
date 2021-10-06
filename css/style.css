@@ -1,0 +1,194 @@
+body{
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Lobster', cursive;
+}
+
+/* header section style */
+.header{
+    width: 10px;
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),url('../images/vipul-jha-a4X1cdC1QAc-unsplash.jpg'); 
+   background-position: center;
+   background-size:cover ;
+   background-attachment: fixed;
+    height: 10px;
+    margin:20% auto;
+}
+.header-content{
+    display: none;
+}
+.header-content h1{
+    font-size: 3rem;
+
+}
+.header-content p{
+    font-size: 1.5rem;
+}
+.nav{
+    display: none;
+}
+.nv .fas {
+transition: all 1s;
+}
+.nav-list{
+    margin-top: 50px;
+    display: none;
+    transition: all 2s;
+}
+.nav-top{
+    display: none;
+    transition: all 2s;
+}
+.nav-layer{
+    /* height: 100vh; */
+    width: 0px;
+    background-color:rgba(195, 55, 100, 0.8) ;
+    z-index: 10000;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+.nav:hover{
+    cursor: pointer;
+}
+.nav-list li a{
+    color: rgba(29, 38, 113, 0.8) !important;
+    transition: all 1s;
+}
+.nav-list li a:hover{
+    cursor: pointer;
+    color: goldenrod !important;
+    transition: all 1s;
+}
+.nav-top .close{
+    transition: all 1s;
+
+}
+.nav-top .close:hover{
+    cursor: pointer;
+    color: rgba(29, 38, 113, 1) !important;
+    transition: all 1s;
+}
+
+/* details section style */
+.details{
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+    clip-path: polygon(50% 0%, 78% 6%, 100% 0, 100% 100%, 79% 94%, 47% 100%, 20% 94%, 0 100%, 0 0, 17% 6%);
+
+    display: none;
+}
+.container{
+    padding: 50px 50px ;
+    background-color: white;
+}
+.instructor-data{
+    border-left: 3px solid #fe7725;
+    margin-bottom: 10px;
+    position: relative !important;
+    padding: 0px !important;
+}
+.instructor-data p{
+    margin: 0 !important;
+    padding: 10px !important;
+}
+.instructor-data::after{
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    top: 100%;
+    width: 50%;
+    height: 3px;
+    background-color: #fe7725 ;
+}
+.minus-circle{
+    background-color: #be0909 !important;
+}
+.plus-circle{
+    z-index: 100 !important;
+    background-color: #fe7725 !important;
+}
+.plus-circle::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 5px;
+    background-color: #fe7725;
+    z-index: 0;
+}
+.minus-circle::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 5px;
+    background-color: #be0909;
+    z-index: 0;
+}
+.instructor-data-two ,.instructor-data-three ,.instructor-data-four {
+    display: none;
+}
+.instructor {
+    background-color: rgba(29, 38, 113, 0.8);
+    border-radius: 5px;
+    transition: all 1s;
+}
+.instructor:hover{
+    cursor: pointer;
+    background-color: #1c2336;
+}
+
+/* duration style start */
+.duration{
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),url('../images/pexels-pixabay-265129.jpg'); 
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    /* clip-path: polygon(0 1%, 100% 9%, 100% 100%, 0 91%); */
+    display: none;
+
+}
+.counter-text {
+    font-size: 4rem;
+}
+.card-footer{
+    background-color: rgba(29, 38, 113, 0.8);
+}
+.sound{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: all 1s;
+}
+.sound:hover{
+    cursor: pointer;
+    background-color: thistle !important;
+}
+.soundOff{
+    display: none;
+}
+
+.contact{
+    background-color: tomato;
+    background-image: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),url(../images/pexels-rostislav-uzunov-5011647.jpg);
+    background-position: center;
+    clip-path: polygon(0 11%, 100% 0, 100% 88%, 0% 100%);
+    background-attachment: fixed;
+    display: none;
+}
+.icons i{
+    transition: all 1s;
+}
+.icons i:hover{
+    cursor: pointer;
+    background-color: rgba(29, 38, 113, 0.8);
+      color: white !important;
+}
