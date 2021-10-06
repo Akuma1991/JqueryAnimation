@@ -30,21 +30,26 @@ body{
 transition: all 1s;
 }
 .nav-list{
-    margin-top: 50px;
+    /* margin-top: 10%; */
     display: none;
     transition: all 2s;
+    top: 60px;
 }
 .nav-top{
     display: none;
     transition: all 2s;
 }
 .nav-layer{
-    /* height: 100vh; */
+    height: 100vh;
     width: 0px;
     background-color:rgba(195, 55, 100, 0.8) ;
     z-index: 10000;
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  
+    /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
 
+}
+.fixed-layer{
+    width: 250px !important;
 }
 .nav:hover{
     cursor: pointer;
@@ -192,3 +197,5 @@ transition: all 1s;
     background-color: rgba(29, 38, 113, 0.8);
       color: white !important;
 }
+
+
